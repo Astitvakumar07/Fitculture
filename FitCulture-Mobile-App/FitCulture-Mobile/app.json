@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "FitCulture",
+    "slug": "fitculture",
+    "version": "1.0.0",
+    "icon": "./assets/fitculture-icon.png",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.yourname.fitculture",
+      "googleServicesFile": "./google-services.json",
+      "icon": "./assets/fitculture-icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/fitculture-icon.png",
+        "backgroundColor": "#111315"
+      },
+      "permissions": [
+        "ACTIVITY_RECOGNITION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "android.permission.health.READ_STEPS",
+        "android.permission.health.WRITE_STEPS",
+        "android.permission.health.READ_EXERCISE",
+        "android.permission.health.WRITE_EXERCISE",
+        "android.permission.health.READ_DISTANCE",
+        "android.permission.health.WRITE_DISTANCE",
+        "android.permission.health.READ_ACTIVE_CALORIES_BURNED",
+        "android.permission.health.WRITE_ACTIVE_CALORIES_BURNED",
+        "android.permission.health.WRITE_EXERCISE_ROUTE",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.yourname.fitculture",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location"
+        ]
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "FitCulture uses your location to map running and cycling sessions.",
+          "locationAlwaysAndWhenInUsePermission": "FitCulture uses location in the background only while you actively track a run or ride."
+        }
+      ],
+      "react-native-health-connect",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "minSdkVersion": 26
+          }
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-notifications",
+        {
+          "color": "#AEEA6B",
+          "defaultChannel": "fitculture-nudges"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "62f7de49-6d98-4a9b-b945-9aab03f20b59"
+      }
+    },
+    "owner": "astitva_kumar"
+  }
+}

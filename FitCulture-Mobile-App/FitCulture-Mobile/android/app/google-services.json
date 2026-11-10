@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "292682825342",
+    "project_id": "fitculture-57675",
+    "storage_bucket": "fitculture-57675.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292682825342:android:0ee173cd685ff11b57e22f",
+        "android_client_info": {
+          "package_name": "com.yourname.fitculture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO2rXQfUn0CWQehuXdQj0sy7WgKr51-gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
